@@ -296,3 +296,5 @@ dump/
 src/
 pyproject.toml
 Cargo.toml
+.tool-versions
+out/
