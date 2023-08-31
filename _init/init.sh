@@ -99,11 +99,11 @@ _pdm_python_contents="./.venv/bin/python.exe"
 echo $_pdm_python_contents >$_pdm_python_path
 # .tool-versions
 _toll_versions_path="${PROJECT_DIR}/.tool-versions"
-_toll_versions_contents="golang 1.21.0
-kotlin 1.9.0
-nim 2.0.0
-python 3.11.4
-rust 1.71.1"
+_toll_versions_contents="golang latest
+kotlin latest
+nim latest
+python latest
+rust latest
 echo $_toll_versions_contents >$_toll_versions_path
 if [[ $? -eq 0 ]]; then
     echo -e "${CYAN}🗸${RESET} Initialized misc files.${RESET}\n"

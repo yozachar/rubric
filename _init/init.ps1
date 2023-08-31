@@ -97,11 +97,11 @@ $_pdm_python_contents | Set-Content -Path $_pdm_python_path
 # .tool-versions
 $_toll_versions_path = Join-Path $PROJECT_DIR ".tool-versions"
 $_toll_versions_contents = @"
-golang 1.21.0
-kotlin 1.9.0
-nim 2.0.0
-python 3.11.4
-rust 1.71.1
+golang latest
+kotlin latest
+nim latest
+python latest
+rust latest
 "@
 $_toll_versions_contents | Set-Content -Path $_toll_versions_path
 if ($?) {
