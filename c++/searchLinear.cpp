@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-bool linearSearch(std::string givenSequence, std::string searchTerm)
+bool linearSearch(const std::string &givenSequence, const std::string &searchTerm)
 {
     /* Linear Search Function. */
     const int LENGTH_OF_SEARCH_TERM = searchTerm.length(),
@@ -12,10 +12,7 @@ bool linearSearch(std::string givenSequence, std::string searchTerm)
 
     while (rightCursor <= LENGTH_OF_GIVEN_SEQUENCE)
     {
-
-        std::string slice = givenSequence.substr(leftCursor, LENGTH_OF_SEARCH_TERM);
-        std::cout << leftCursor << " " << slice << " " << rightCursor << "\n";
-        if (slice.compare(searchTerm) == 0)
+        if (givenSequence.substr(leftCursor, LENGTH_OF_SEARCH_TERM).compare(searchTerm) == 0)
             return true;
         leftCursor += 1;
         rightCursor = leftCursor + LENGTH_OF_SEARCH_TERM;

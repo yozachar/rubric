@@ -10,7 +10,7 @@
 // local
 #include "./_lib.h"
 
-bool linearSearch(char *givenSequence, char *searchTerm)
+bool linearSearch(const char *givenSequence, const char *searchTerm)
 {
     /* Linear Search Function. */
     const int LENGTH_OF_SEARCH_TERM = strlen(searchTerm),
@@ -20,8 +20,7 @@ bool linearSearch(char *givenSequence, char *searchTerm)
 
     while (rightCursor <= LENGTH_OF_GIVEN_SEQUENCE)
     {
-        slice = sliceString(givenSequence, leftCursor, rightCursor);
-        if (strcmp(slice, searchTerm) == 0)
+        if (strcmp(sliceString(givenSequence, leftCursor, rightCursor), searchTerm) == 0)
         {
             free(slice);
             return true;
