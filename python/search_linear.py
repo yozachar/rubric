@@ -2,7 +2,7 @@
 
 
 def linear_search(given_sequence: str, search_term: str):
-    "Linear Search Function."
+    """Linear Search Function."""
     length_of_search_term = len(search_term)
     length_of_given_sequence = len(given_sequence)
     left_cursor = 0
@@ -17,7 +17,7 @@ def linear_search(given_sequence: str, search_term: str):
 
 
 def main():
-    "Main."
+    """Main."""
     sample_input_sequence = "This is an example sequence."
     sample_input_search_term = "an ex"
 
