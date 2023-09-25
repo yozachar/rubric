@@ -19,7 +19,7 @@ proc linearSearch(givenSequence: string, searchTerm: string): bool =
   return false
 
 
-proc main(): bool =
+proc main(): void =
   #[ Main. ]#
   let
     sampleInputSequence = "This is an example sequence."
@@ -28,14 +28,14 @@ proc main(): bool =
   stdout.write("Sequence: ")
   var inputSequence = stdin.readLine().strip()
   stdout.write("Search term: ")
-  var inputSearchTerm = stdin.readLine()
+  var inputSearchTerm = stdin.readLine().strip()
 
   if inputSequence.len == 0:
     inputSequence = sampleInputSequence
   if inputSearchTerm.len == 0:
     inputSearchTerm = sampleInputSearchTerm
 
-  return linearSearch(inputSequence, inputSearchTerm)
+  echo linearSearch(inputSequence, inputSearchTerm)
 
 
-echo main()
+main()

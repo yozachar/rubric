@@ -24,7 +24,7 @@ def main():
     input_sequence = input("Sequence: ") or sample_input_sequence
     input_search_term = input("Search term: ") or sample_input_search_term
 
-    return linear_search(input_sequence, input_search_term)
+    print(linear_search(input_sequence, input_search_term))
 
 
-print(bool(main()))
+main()
