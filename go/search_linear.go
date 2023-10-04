@@ -12,7 +12,7 @@ func linearSearch(givenSequence string, searchTerm string) bool {
 	lengthOfSearchTerm := len(searchTerm)
 	lengthOfGivenSequence := len(givenSequence)
 	leftCursor := 0
-	rightCursor := lengthOfGivenSequence
+	rightCursor := lengthOfSearchTerm
 
 	for rightCursor <= lengthOfGivenSequence {
 		if givenSequence[leftCursor:rightCursor] == searchTerm {

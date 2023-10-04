@@ -6,7 +6,7 @@ bool linearSearch(String givenSequence, String searchTerm) {
   final lengthOfSearchTerm = searchTerm.length;
   final lengthOfGivenSequence = givenSequence.length;
   var leftCursor = 0;
-  var rightCursor = lengthOfGivenSequence;
+  var rightCursor = lengthOfSearchTerm;
 
   while (rightCursor <= lengthOfGivenSequence) {
     if (givenSequence.substring(leftCursor, rightCursor) == searchTerm) {
@@ -35,6 +35,5 @@ void main() {
     inputSearchTerm = SAMPLE_INPUT_SEARCH_TERM;
   }
 
-  var result = linearSearch(inputSequence, inputSearchTerm);
-  print(result);
+  print(linearSearch(inputSequence, inputSearchTerm));
 }

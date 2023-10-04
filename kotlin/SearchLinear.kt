@@ -4,7 +4,7 @@ fun linearSearch(givenSequence: String, searchTerm: String): Boolean {
     val lengthOfSearchTerm = searchTerm.length
     val lengthOfGivenSequence = givenSequence.length
     var leftCursor = 0
-    var rightCursor = lengthOfGivenSequence
+    var rightCursor = lengthOfSearchTerm
 
     while (rightCursor <= lengthOfGivenSequence) {
         if (givenSequence.slice(leftCursor until rightCursor) == searchTerm) {
