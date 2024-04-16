@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rubric"
+version = "0.1.0"
+description = "Coders' Creed"
+authors = [{ name = "Yozachar", email = "dev@void.null" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.pdm.dev-dependencies]
+tooling = ["bandit>=1.7.8", "black>=24.4.0", "ruff>=0.3.7", "pyright>=1.1.358"]

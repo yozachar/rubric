@@ -1,0 +1,16 @@
+{
+  "name": "rubric",
+  "version": "0.1.0",
+  "description": "Coders' Creed",
+  "private": true,
+  "scripts": {
+    "x": "npx ts-node typescript/*.ts"
+  },
+  "keywords": [],
+  "author": "Yozachar",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^20.12.7",
+    "ts-node": "^10.9.2"
+  }
+}
